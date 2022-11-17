@@ -21,6 +21,11 @@ struct ScannerView:UIViewControllerRepresentable {
             self.completionHandler = completion
         }
         
+        func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
+            let recognizer = TextRecognizer(cameraScan: scan)
+            recognizer.recognizeText(withCompletionHandler: completionHandler)
+        }
+        
         func  documentCameraViewController(_ controller: VNDocumentCameraViewController, didFailWithError error: Error) {
             completionHandler(nil)
         }
@@ -32,6 +37,7 @@ struct ScannerView:UIViewControllerRepresentable {
     
     func makeUIViewController(context: Context) -> VNDocumentCameraViewController {
         let viewController = VNDocumentCameraViewController()
+        viewController.delegate = context.coordinator
         return viewController
     }
     

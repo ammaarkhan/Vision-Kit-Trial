@@ -33,10 +33,22 @@ struct ContentView: View {
                         .font(.title)
                 })
                 .sheet(isPresented: $showScannerSheet, content: {
-                    
+                    makeScannerView()
                 })
                 )
         }
+        
+        }
+        private func makeScannerView()-> ScannerView {
+        ScannerView(completion: {
+            textPerPage in
+            if let outputText = textPerPage?.joined(separator: "\n").trimmingCharacters(in:
+                    .whitespacesAndNewlines){
+                let newScanData = ScanData(content: outputText)
+                self.texts.append(newScanData)
+            }
+            self.showScannerSheet = false
+        })
     }
 }
 
