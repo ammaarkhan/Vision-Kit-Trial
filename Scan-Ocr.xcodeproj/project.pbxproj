@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88AC3B412926B47A0055AA44 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AC3B402926B47A0055AA44 /* TextRecognizer.swift */; };
 		88B1928B29260B0F0095F337 /* Scan_OcrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1928A29260B0F0095F337 /* Scan_OcrApp.swift */; };
 		88B1928D29260B0F0095F337 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1928C29260B0F0095F337 /* ContentView.swift */; };
 		88B1928F29260B100095F337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B1928E29260B100095F337 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88AC3B402926B47A0055AA44 /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
 		88B1928729260B0F0095F337 /* Scan-Ocr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scan-Ocr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B1928A29260B0F0095F337 /* Scan_OcrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scan_OcrApp.swift; sourceTree = "<group>"; };
 		88B1928C29260B0F0095F337 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				88B1929A292611EF0095F337 /* Info.plist */,
 				88B1928A29260B0F0095F337 /* Scan_OcrApp.swift */,
+				88AC3B402926B47A0055AA44 /* TextRecognizer.swift */,
 				88B1928C29260B0F0095F337 /* ContentView.swift */,
 				88B1929B2926125D0095F337 /* ScannerView.swift */,
 				88B1929829260ED70095F337 /* ScanData.swift */,
@@ -147,6 +150,7 @@
 			files = (
 				88B1928D29260B0F0095F337 /* ContentView.swift in Sources */,
 				88B1929C2926125D0095F337 /* ScannerView.swift in Sources */,
+				88AC3B412926B47A0055AA44 /* TextRecognizer.swift in Sources */,
 				88B1928B29260B0F0095F337 /* Scan_OcrApp.swift in Sources */,
 				88B1929929260ED70095F337 /* ScanData.swift in Sources */,
 			);
